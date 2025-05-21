@@ -92,7 +92,7 @@ def main(input_file, output_file):
     df = load_data(input_file)
     df = create_normalized_key(df)
     df = generate_cleaned_text(df)
-    df.to_csv("../files/test.csv", index=False)
+    df.to_csv("files/test.csv", index=False)
     save_data(df, output_file)
 
     print(df)
